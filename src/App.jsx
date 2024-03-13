@@ -1,30 +1,27 @@
-import Reloj from "./components/reloj/Reloj";
 import "./App.css";
+import Nav from "./components/nav/Nav";
+import Comercial from "./pages/Comercial/Comercial";
+import Contable from "./pages/Contable/Contable";
+import Coordinacion from "./pages/Coordinacion/Coordinacion";
+import Marketing from "./pages/Marketing/Marketing";
+import { Router, Routes, Route } from "react-router-dom";
+import Rrhh from "./pages/Recursos_humanos/Rrhh";
 const App = () => {
-  const paises = [
-    {
-      nombre: "Argentina",
-      zonaHoraria: "America/Argentina/Buenos_Aires",
-      jornadaLaboral: 8,
-    },
-    { nombre: "Chile", zonaHoraria: "Chile/Continental", jornadaLaboral: 8 },
-    { nombre: "Uruguay", zonaHoraria: "America/Montevideo", jornadaLaboral: 8 },
-    { nombre: "Mexico", zonaHoraria: "America/Mexico_City", jornadaLaboral: 8 },
-    { nombre: "Colombia", zonaHoraria: "America/Bogota", jornadaLaboral: 8 },
-    { nombre: "España", zonaHoraria: "Europe/Madrid", jornadaLaboral: 8 },
-    { nombre: "Ecuador", zonaHoraria: "America/Guayaquil", jornadaLaboral: 8 },
-  ];
-
   return (
-    <div className="ContenedorDePaises">
-      {paises.map((pais) => (
-        <Reloj
-          key={pais.nombre}
-          pais={pais.nombre}
-          zonaHoraria={pais.zonaHoraria}
-          jornadaLaboral={pais.jornadaLaboral}
-        />
-      ))}
+    <div className="contenedor-principal">
+      <div className="contenedor-nav">
+        <Nav />
+      </div>
+
+      <div className="contenedor-paises">
+        <Routes>
+          <Route path="/" element={<Marketing />} />
+          <Route path="/contable" element={<Contable />} />
+          <Route path="/recursos-humanos" element={<Rrhh />} />
+          <Route path="/comercial" element={<Comercial />} />
+          <Route path="/coordinacion" element={<Coordinacion />} />
+        </Routes>
+      </div>
     </div>
   );
 };
