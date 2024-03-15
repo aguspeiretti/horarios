@@ -17,7 +17,7 @@ const Reloj = ({
 }) => {
   const [horaActual, setHoraActual] = useState("");
   const [progresoJornada, setProgresoJornada] = useState(0);
-
+  console.log(pais);
   useEffect(() => {
     const interval = setInterval(() => {
       const horaActual = moment().tz(zonaHoraria);
@@ -80,7 +80,97 @@ const Reloj = ({
     // Añade más países y sus respectivos órdenes aquí si es necesario
   };
 
-  // Obtener el orden de los números para el país actual
+  const horariosPais = {
+    Argentina: [
+      {
+        area: "Marketing",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Contable",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Rrhh",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Coordinacion",
+        inicio: "10.00",
+        salida: "19.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+    ],
+    Chile: [
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+      {
+        area: "Marketing",
+        inicio: "10.00",
+        salida: "18.15",
+      },
+    ],
+    España: [
+      {
+        area: "Marketing",
+        inicio: "10.00",
+        salida: "18.15",
+      },
+      {
+        area: "Contable",
+        inicio: "10.00",
+        salida: "18.15",
+      },
+      {
+        area: "Coordinacion",
+        inicio: "10.00",
+        salida: "20.15",
+      },
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.45",
+      },
+    ],
+    Mexico: [
+      {
+        area: "Marketing",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "07.00",
+        salida: "16.00",
+      },
+    ],
+  };
+
+  // Obtener los horarios para el país y área específicos
+  const horariosPorPais = horariosPais[pais];
+  const horariosPorArea = horariosPorPais.filter(
+    (horario) => horario.area === area
+  );
+
+  // Mapear los horarios para mostrarlos en el div jornada
+  const horarios = horariosPorArea.map((horario, index) => (
+    <div className="jornada-item" key={index}>
+      <p>Jornada</p>
+      <p>{horario.inicio}</p>
+      <p>{horario.salida}</p>
+    </div>
+  ));
+
   const ordenNumeros = ordenNumerosPorPais[pais];
 
   // Generar los números en el orden específico del país
@@ -107,24 +197,7 @@ const Reloj = ({
           </div>
 
           <div className="paisInfo">
-            <p>Jornada</p>
-            <p>
-              {moment()
-                .tz(zonaHoraria)
-                .startOf("day")
-                .set("hours", horaIngreso)
-                .set("minutes", (horaIngreso % 1) * 60) // Tomar en cuenta los minutos
-                .format("hh:mm A")}
-            </p>
-            <p>
-              {moment()
-                .tz(zonaHoraria)
-                .startOf("day")
-                .set("hours", Math.floor(horaIngreso))
-                .set("minutes", Math.round((horaIngreso % 1) * 60))
-                .add(jornadaLaboral, "hours")
-                .format("hh:mm A")}
-            </p>
+            <div className="jornada">{horarios}</div>
           </div>
         </div>
         <div className="reductor">

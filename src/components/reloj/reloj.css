@@ -397,3 +397,9 @@ border-radius: 5px;
  position: absolute;
  left: 25%
 }
+.jornada-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
