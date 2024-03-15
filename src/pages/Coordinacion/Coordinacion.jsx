@@ -4,18 +4,19 @@ const Coordinacion = () => {
   const paises = [
     {
       nombre: "Argentina",
+      area: "Coordinacion",
       zonaHoraria: "America/Argentina/Buenos_Aires",
-      jornadaLaboral: 9,
+      jornadaLaboral: 8.8,
       horaIngreso: 10,
-      horaSalida: 19,
+      horaSalida: 20.5,
     },
-
     {
       nombre: "España",
+      area: "Coordinacion",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 10.25,
+      jornadaLaboral: 10.12,
       horaIngreso: 10,
-      horaSalida: 20.15,
+      horaSalida: 20,
     },
   ];
   return (
@@ -32,6 +33,7 @@ const Coordinacion = () => {
             jornadaLaboral={pais.jornadaLaboral}
             horaIngreso={pais.horaIngreso}
             horaSalida={pais.horaSalida}
+            area={pais.area}
           />
         ))}
       </div>

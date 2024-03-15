@@ -5,6 +5,7 @@ const Contable = () => {
   const paises = [
     {
       nombre: "Argentina",
+      area: "Contable",
       zonaHoraria: "America/Argentina/Buenos_Aires",
       jornadaLaboral: 9,
       horaIngreso: 8,
@@ -13,10 +14,11 @@ const Contable = () => {
 
     {
       nombre: "España",
+      area: "Contable",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 8.75,
+      jornadaLaboral: 8.15,
       horaIngreso: 10,
-      horaSalida: 18.45,
+      horaSalida: 18.75,
     },
   ];
   return (
@@ -33,6 +35,7 @@ const Contable = () => {
             jornadaLaboral={pais.jornadaLaboral}
             horaIngreso={pais.horaIngreso}
             horaSalida={pais.horaSalida}
+            area={pais.area}
           />
         ))}
       </div>

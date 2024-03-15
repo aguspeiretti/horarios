@@ -4,6 +4,7 @@ const Rrhh = () => {
   const paises = [
     {
       nombre: "Argentina",
+      area: "Rrhh",
       zonaHoraria: "America/Argentina/Buenos_Aires",
       jornadaLaboral: 9,
       horaIngreso: 8,
@@ -24,6 +25,7 @@ const Rrhh = () => {
             jornadaLaboral={pais.jornadaLaboral}
             horaIngreso={pais.horaIngreso}
             horaSalida={pais.horaSalida}
+            area={pais.area}
           />
         ))}
       </div>
