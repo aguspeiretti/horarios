@@ -17,7 +17,7 @@ const Reloj = ({
 }) => {
   const [horaActual, setHoraActual] = useState("");
   const [progresoJornada, setProgresoJornada] = useState(0);
-  console.log(pais);
+
   useEffect(() => {
     const interval = setInterval(() => {
       const horaActual = moment().tz(zonaHoraria);

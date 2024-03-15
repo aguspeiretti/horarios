@@ -1,35 +1,36 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import Nav from "./components/nav/Nav";
-import Comercial from "./pages/Comercial/Comercial";
-import Contable from "./pages/Contable/Contable";
-import Coordinacion from "./pages/Coordinacion/Coordinacion";
-import Marketing from "./pages/Marketing/Marketing";
-import { Routes, Route } from "react-router-dom";
-import Rrhh from "./pages/Recursos_humanos/Rrhh";
-import banner from "./assets/banner-02.png";
-const App = () => {
-  return (
-    <>
-      <div className="contenedor-principal">
-        <div className="contenedor-banner">
-          <img src={banner} alt="banner" />
-        </div>
+import Home from "./home/Home";
 
-        <div className="contenedor-paises">
-          <div className="contenedor-nav">
-            <Nav />
-          </div>
-          <Routes>
-            <Route path="/" element={<Marketing />} />
-            <Route path="/contable" element={<Contable />} />
-            <Route path="/recursos-humanos" element={<Rrhh />} />
-            <Route path="/comercial" element={<Comercial />} />
-            <Route path="/coordinacion" element={<Coordinacion />} />
-          </Routes>
-        </div>
-      </div>
-    </>
-  );
+const App = () => {
+  const [pais, setPais] = useState("");
+  console.log(pais);
+
+  useEffect(() => {
+    const obtenerPaisPorIP = async () => {
+      try {
+        const respuesta = await fetch("https://ipapi.co/json/");
+        const datos = await respuesta.json();
+        return datos.country_name; // Devuelve el nombre del país
+      } catch (error) {
+        console.error("Error al obtener el país por IP:", error);
+        return null;
+      }
+    };
+
+    // Uso de la función
+    obtenerPaisPorIP().then((pais) => {
+      if (pais) {
+        console.log("El país detectado es:", pais);
+        setPais(pais);
+        // Aquí puedes hacer lo que necesites con el país detectado
+      } else {
+        console.log("No se pudo detectar el país.");
+      }
+    });
+  }, []);
+
+  return <>{pais ? <Home pais={pais} /> : "Cargando..."}</>;
 };
 
 export default App;
