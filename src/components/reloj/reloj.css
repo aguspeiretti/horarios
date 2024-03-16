@@ -39,6 +39,15 @@
   width: 1px; /* Ancho de la línea vertical */
   background-color: black; /* Color de la línea vertical */
   z-index: 1000;
+  /* content: "";
+  position: absolute;
+  top: -6px;
+  right: -5px; 
+  height: 20px;
+  width: 20px;
+  background-image: url("../../assets/solo-icono.gif");
+  background-size: cover; 
+  z-index: 1000; */
 }
 .infoContainer{
   width: 30%;
