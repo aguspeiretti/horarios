@@ -175,6 +175,14 @@ border-radius: 5px;
   left:58.33%;
   z-index: 100;
 }
+.breack-Colombia-Marketing{
+  width: 4.16%;
+  height: 10px;
+  background-color: #3be780;;
+  position: absolute;
+  left:66.66%;
+  z-index: 100;
+}
 
 .breack-Chile-Marketing{
   width: 10.41%;
@@ -233,6 +241,14 @@ border-radius: 5px;
   background-color: #3be780;;
   position: absolute;
   left:62.5%;
+  z-index: 100;
+}
+.breack-Colombia-Comercial{
+  width: 4%;
+  height: 10px;
+  background-color: #3be780;;
+  position: absolute;
+  left:75%;
   z-index: 100;
 }
 
@@ -294,8 +310,18 @@ border-radius: 5px;
   position: absolute;
   left: 33.33333%;
 }
+#contenedor2-Colombia-Marketing{
+  width: 37.5%;
+ height: 10px;
+ background-color: rgba(169, 130, 196, 0.507);
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ overflow: hidden;
+ position: absolute;
+ left: 41.66%;
+}
 #contenedor2-España-Marketing{
-   width: 36.458%;
+   width: 35%;
   height: 10px;
   background-color:rgba(169, 130, 196, 0.507);
   border: 1px solid #ccc;
@@ -357,7 +383,7 @@ border-radius: 5px;
  left: 33.33%;
 }
  #contenedor2-Mexico-Comercial{
-  width: 43.75%;
+  width: 41%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
    border: 1px solid #ccc;
@@ -376,6 +402,16 @@ border-radius: 5px;
    position: absolute;
    left:41.6666%
  }
+ #contenedor2-Colombia-Comercial{
+  width: 41%;
+ height: 10px;
+ background-color: rgba(169, 130, 196, 0.507);
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ overflow: hidden;
+ position: absolute;
+ left:58.33%
+}
  #contenedor2-España-Comercial{
     width: 44.79%;
    height: 10px;

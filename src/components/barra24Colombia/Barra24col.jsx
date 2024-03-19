@@ -2,14 +2,14 @@
 import { useState, useEffect } from "react";
 import moment from "moment-timezone";
 import "../barra24Argentina/Barra24Arg";
-import "./barra24mejico.css"
 
-const Barra24Mejico = () => {
+
+const Barra24col = () => {
   const [progresoDia, setProgresoDia] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-   const horaActual =  moment().tz("America/Mexico_City"); 
+   const horaActual =  moment().tz("America/Bogota");
 
       // Obtener la hora de inicio del día en la zona horaria local
       const inicioDia = horaActual.clone().startOf("day");
@@ -44,4 +44,4 @@ const Barra24Mejico = () => {
   );
 };
 
-export default Barra24Mejico;
+export default Barra24col;

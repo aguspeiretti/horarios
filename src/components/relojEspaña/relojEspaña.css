@@ -175,6 +175,14 @@
     left:75%;
     z-index: 100;
   }
+  .breacke-Colombia-Marketing{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:83.33%;
+    z-index: 100;
+  }
   
   .breacke-Chile-Marketing{
     width: 10.41%;
@@ -233,6 +241,14 @@
     background-color: #3be780;;
     position: absolute;
     left:79.1666%;
+    z-index: 100;
+  }
+  .breacke-Colombia-Comercial{
+    width: 4.5%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:91%;
     z-index: 100;
   }
   
@@ -294,6 +310,16 @@
     position: absolute;
     left: 50%;
   }
+  #contenedor2e-Colombia-Marketing{
+    width: 37.5%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 58.33%;
+ }
   #contenedor2e-España-Marketing{
      width:34.375%;
     height: 10px;
@@ -376,6 +402,16 @@
      position: absolute;
      left:58.33%
    }
+   #contenedor2e-Colombia-Comercial{
+    width: 43.75%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left:75%
+ }
    #contenedor2e-España-Comercial{
       width: 43.79%;
      height: 10px;

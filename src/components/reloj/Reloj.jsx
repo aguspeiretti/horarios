@@ -77,6 +77,10 @@ const Reloj = ({
       22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
       18, 19, 20, 21,
     ],
+    Colombia: [
+       23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+      18, 19, 20, 21,22,
+    ],
     // Añade más países y sus respectivos órdenes aquí si es necesario
   };
 
@@ -154,6 +158,18 @@ const Reloj = ({
         salida: "20.00",
       },
     ],
+    Colombia:[
+      {
+        area: "Marketing",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "12.00",
+        salida: "22.00",
+      },
+    ]
   };
 
   // Obtener los horarios para el país y área específicos

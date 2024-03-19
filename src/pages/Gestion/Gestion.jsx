@@ -6,7 +6,7 @@ import RelojColombia from "../../components/relojColombia/RelojColombia";
 import RelojEspaña from "../../components/relojEspaña/RelojEspaña";
 import RelojMejico from "../../components/relojMejico/RelojMejico";
 
-const Coordinacion = ({vpn}) => {
+const Gestion = ({vpn}) => {
   const paises = [
     {
       nombre: "Argentina",
@@ -44,6 +44,7 @@ const Coordinacion = ({vpn}) => {
     },
 
   ];
+ 
   const colombia = [
     {
       nombre: "Colombia",
@@ -51,7 +52,7 @@ const Coordinacion = ({vpn}) => {
       zonaHoraria: "America/Bogota",
       jornadaLaboral: 9.2,
       horaIngreso: 8,
-      horaSalida: 17,
+      horaSalida: 17    ,
     },
     {
       nombre: "Argentina",
@@ -72,13 +73,13 @@ const Coordinacion = ({vpn}) => {
   ];
   const mejico = [
     {
-      nombre: "Mexico",
-      area: "Coordinacion",
-      zonaHoraria: "America/Bogota",
-      jornadaLaboral: 9.2,
-      horaIngreso: 8,
-      horaSalida: 17,
-    },
+        nombre: "Mexico",
+        area: "Gestion",
+        zonaHoraria: "America/Mexico_City",
+        jornadaLaboral: 9.1,
+        horaIngreso: 7,
+        horaSalida: 16,
+      },
     {
       nombre: "Argentina",
       area: "Coordinacion",
@@ -98,13 +99,13 @@ const Coordinacion = ({vpn}) => {
   ];
   const chile = [
     {
-      nombre: "Chile",
-      area: "Coordinacion",
-      zonaHoraria: "Chile/Continental",
-      jornadaLaboral: 9.2,
-      horaIngreso: 10,
-      horaSalida: 18,
-    },
+        nombre: "Chile",
+        area: "Coordinacion",
+        zonaHoraria: "Chile/Continental",
+        jornadaLaboral: 9.1,
+        horaIngreso: 10,
+        horaSalida: 19,
+      },
     {
       nombre: "Argentina",
       area: "Coordinacion",
@@ -117,16 +118,15 @@ const Coordinacion = ({vpn}) => {
       nombre: "España",
       area: "Coordinacion",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 10.12,
+      jornadaLaboral: 10.1,
       horaIngreso: 10,
       horaSalida: 20,
     },
   ];
-  
   return (
     <>
        <div className="titular">
-        <h2 className="titulo">Coordinación</h2>
+        <h2 className="titulo">Gestión</h2>
         <div className="indicacion">
           <div className="seña"></div>
           <p>Horario de break</p>
@@ -176,36 +176,36 @@ const Coordinacion = ({vpn}) => {
         ))}
       </div> 
     )  : vpn === "Mexico" ? (
-      <div>
-      {mejico.map((pais) => (
-          <RelojMejico
-            key={pais.nombre}
-            pais={pais.nombre}
-            zonaHoraria={pais.zonaHoraria}
-            jornadaLaboral={pais.jornadaLaboral}
-            horaIngreso={pais.horaIngreso}
-            horaSalida={pais.horaSalida}
-            area={pais.area}
-          />
-        ))}
-      </div> 
-    )  : vpn === "Chile" ? (
-      <div>
-      {chile.map((pais) => (
-          <RelojChile
-            key={pais.nombre}
-            pais={pais.nombre}
-            zonaHoraria={pais.zonaHoraria}
-            jornadaLaboral={pais.jornadaLaboral}
-            horaIngreso={pais.horaIngreso}
-            horaSalida={pais.horaSalida}
-            area={pais.area}
-          />
-        ))}
-      </div> 
-    )  : null  }
+        <div>
+        {mejico.map((pais) => (
+            <RelojMejico
+              key={pais.nombre}
+              pais={pais.nombre}
+              zonaHoraria={pais.zonaHoraria}
+              jornadaLaboral={pais.jornadaLaboral}
+              horaIngreso={pais.horaIngreso}
+              horaSalida={pais.horaSalida}
+              area={pais.area}
+            />
+          ))}
+        </div> 
+      )  : vpn === "Chile" ? (
+        <div>
+        {chile.map((pais) => (
+            <RelojChile
+              key={pais.nombre}
+              pais={pais.nombre}
+              zonaHoraria={pais.zonaHoraria}
+              jornadaLaboral={pais.jornadaLaboral}
+              horaIngreso={pais.horaIngreso}
+              horaSalida={pais.horaSalida}
+              area={pais.area}
+            />
+          ))}
+        </div> 
+      )  : null}
     </>
   );
 };
 
-export default Coordinacion;
+export default Gestion;

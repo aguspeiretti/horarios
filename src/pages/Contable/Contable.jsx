@@ -2,12 +2,40 @@
 /* eslint-disable react/prop-types */
 import Reloj from "../../components/reloj/Reloj";
 import RelojChile from "../../components/relojChile/RelojChile";
+import RelojColombia from "../../components/relojColombia/RelojColombia";
 import RelojEspaña from "../../components/relojEspaña/RelojEspaña";
 import RelojMejico from "../../components/relojMejico/RelojMejico";
 import "./Contable.css";
 
 const Contable = ({vpn}) => {
   const paises = [
+    {
+      nombre: "Argentina",
+      area: "Contable",
+      zonaHoraria: "America/Argentina/Buenos_Aires",
+      jornadaLaboral: 9,
+      horaIngreso: 8,
+      horaSalida: 17,
+    },
+
+    {
+      nombre: "España",
+      area: "Contable",
+      zonaHoraria: "Europe/Madrid",
+      jornadaLaboral: 8.15,
+      horaIngreso: 10,
+      horaSalida: 18.75,
+    },
+  ];
+  const chile = [
+    {
+      nombre: "Chile",
+      area: "Contable",
+      zonaHoraria: "Chile/Continental",
+      jornadaLaboral: 9,
+      horaIngreso: 8,
+      horaSalida: 17,
+    },
     {
       nombre: "Argentina",
       area: "Contable",
@@ -73,10 +101,41 @@ const Contable = ({vpn}) => {
       horaSalida: 18.75,
     },
   ];
+  const colombia = [
+    {
+      nombre: "Colombia",
+      area: "Contable",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 9,
+      horaIngreso: 6,
+      horaSalida: 15,
+    },
+    {
+      nombre: "Argentina",
+      area: "Contable",
+      zonaHoraria: "America/Argentina/Buenos_Aires",
+      jornadaLaboral: 9,
+      horaIngreso: 8,
+      horaSalida: 17,
+    },
+
+    {
+      nombre: "España",
+      area: "Contable",
+      zonaHoraria: "Europe/Madrid",
+      jornadaLaboral: 8.15,
+      horaIngreso: 10,
+      horaSalida: 18.75,
+    },
+  ];
   return (
     <>
-      <div>
+     <div className="titular">
         <h2 className="titulo">Contable</h2>
+        <div className="indicacion">
+          <div className="seña"></div>
+          <p>Horario de break</p>
+        </div>
       </div>
       {vpn === "Argentina" ?   (
       <div>
@@ -95,7 +154,7 @@ const Contable = ({vpn}) => {
     </div>
     ) : vpn === "Chile" ? (
       <div>
-      {paises.map((pais) => (
+      {chile.map((pais) => (
           <RelojChile
             key={pais.nombre}
             pais={pais.nombre}
@@ -125,6 +184,20 @@ const Contable = ({vpn}) => {
       <div>
       {mexico.map((pais) => (
           <RelojMejico
+            key={pais.nombre}
+            pais={pais.nombre}
+            zonaHoraria={pais.zonaHoraria}
+            jornadaLaboral={pais.jornadaLaboral}
+            horaIngreso={pais.horaIngreso}
+            horaSalida={pais.horaSalida}
+            area={pais.area}
+          />
+        ))}
+      </div> 
+    ) : vpn === "Colombia" ? (
+      <div>
+      {colombia.map((pais) => (
+          <RelojColombia
             key={pais.nombre}
             pais={pais.nombre}
             zonaHoraria={pais.zonaHoraria}

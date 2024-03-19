@@ -33,7 +33,7 @@ const Barra24esp = () => {
 
   const barraStyle = {
     width: `${progresoDia}%`,
-    backgroundColor: progresoDia > 30 ? "#fff" : "#e74c3c",
+    backgroundColor: progresoDia > 30 ? "#00FF0000" : "#00FF0000",
   };
 
   return (

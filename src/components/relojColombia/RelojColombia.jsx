@@ -2,13 +2,12 @@
 // Reloj.js
 import { useState, useEffect } from "react";
 import moment from "moment-timezone";
-import "./relojMejico.css";
+import "./relojColombia.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import Barra24col from "../barra24Colombia/Barra24col";
 
-import Barra24Mejico from "../barra24Mejico/Barra24Mejico";
-
-const RelojMejico = ({
+const RelojColombia = ({
   pais,
   zonaHoraria,
   jornadaLaboral,
@@ -62,27 +61,26 @@ const RelojMejico = ({
 
   // Generar los números del 0 al 24
   const ordenNumerosPorPais = {
-    Mexico: [
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-     15,16, 17,18, 19, 20, 21, 22,23, 24
-   ],
+    Colombia: [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24,
+      ],
     Argentina: [
-         3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-        18, 19, 20, 21, 22, 23, 24,0, 1, 2,
+       2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24,0, 1,
     ],
     Chile: [
-        3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-        18, 19, 20, 21, 22, 23, 24,0, 1, 2, 
+       2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24,0, 1,
     ],
     España: [
-        7,8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24,0, 1, 2, 3, 4, 5, 6,
+       6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+      24, 0, 1, 2, 3,4, 5,
     ],
-    Colombia: [
-       1, 2, 3, 4, 5, 6,7,8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      21, 22, 23, 24,0,
-  ],
-  
+    Mexico: [
+        24,  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+      18, 19, 20, 21, 22, 23, 
+    ],
     // Añade más países y sus respectivos órdenes aquí si es necesario
   };
 
@@ -148,19 +146,14 @@ const RelojMejico = ({
         salida: "20.45",
       },
     ],
-    Mexico: [
-      {
-        area: "Marketing",
-        inicio: "07.00",
-        salida: "16.00",
-      },
-      {
-        area: "Comercial",
-        inicio: "10.00",
-        salida: "20.00",
-      },
+    Colombia:[
+        {
+            area: "Comercial",
+            inicio: "12.00",
+            salida: "22.00",
+          },
     ],
-    Colombia: [
+    Mexico: [
       {
         area: "Marketing",
         inicio: "07.00",
@@ -220,11 +213,11 @@ const RelojMejico = ({
         </div>
         <div className="reductor">
           <div className="contenedorBarra">
-            <Barra24Mejico pais={pais} zonaHoraria={zonaHoraria} />
-            <div className={`breackm-${pais}-${area}`}></div>
+            <Barra24col pais={pais} zonaHoraria={zonaHoraria} />
+            <div className={`breackCo-${pais}-${area}`}></div>
             <div className="regla">{numerosRegla}</div>
             <div
-              id={`contenedor2m-${pais}-${area}`}
+              id={`contenedor2Co-${pais}-${area}`}
               className="contenedor-total"
             >
               <div
@@ -240,4 +233,4 @@ const RelojMejico = ({
   );
 };
 
-export default RelojMejico;
+export default RelojColombia;

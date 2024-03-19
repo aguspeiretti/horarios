@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import Reloj from "../../components/reloj/Reloj";
 import RelojChile from "../../components/relojChile/RelojChile";
+import RelojColombia from "../../components/relojColombia/RelojColombia";
 import RelojEspaña from "../../components/relojEspaña/RelojEspaña";
 import RelojMejico from "../../components/relojMejico/RelojMejico";
 
@@ -16,23 +17,23 @@ const Rrhh = ({vpn}) => {
       horaSalida: 17,
     },
 
-    {
-      nombre: "España",
-      area: "Rrhh",
-      zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 8.15,
-      horaIngreso: 10,
-      horaSalida: 18.75,
-    },
+    // {
+    //   nombre: "España",
+    //   area: "Rrhh",
+    //   zonaHoraria: "Europe/Madrid",
+    //   jornadaLaboral: 8.15,
+    //   horaIngreso: 10,
+    //   horaSalida: 18.75,
+    // },
   ];
   const españa = [
     {
       nombre: "España",
       area: "Rrhh",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 8.3,
-      horaIngreso: 10,
-      horaSalida: 18.75,
+      jornadaLaboral: 9,
+      horaIngreso: 12,
+      horaSalida: 21,
     },
     {
       nombre: "Argentina",
@@ -70,6 +71,26 @@ const Rrhh = ({vpn}) => {
         jornadaLaboral: 9,
         horaIngreso: 8,
         horaSalida: 17,
+      },
+      {
+        nombre: "Argentina",
+        area: "Rrhh",
+        zonaHoraria: "America/Argentina/Buenos_Aires",
+        jornadaLaboral: 9,
+        horaIngreso: 8,
+        horaSalida: 17,
+      },
+  
+ 
+    ];
+    const colombia = [
+      {
+        nombre: "Colombia",
+        area: "Rrhh",
+        zonaHoraria: "America/Bogota",
+        jornadaLaboral: 9,
+        horaIngreso: 6,
+        horaSalida: 15,
       },
       {
         nombre: "Argentina",
@@ -135,6 +156,20 @@ const Rrhh = ({vpn}) => {
       <div>
       {mexico.map((pais) => (
           <RelojMejico
+            key={pais.nombre}
+            pais={pais.nombre}
+            zonaHoraria={pais.zonaHoraria}
+            jornadaLaboral={pais.jornadaLaboral}
+            horaIngreso={pais.horaIngreso}
+            horaSalida={pais.horaSalida}
+            area={pais.area}
+          />
+        ))}
+      </div> 
+    ) : vpn === "Colombia" ? (
+      <div>
+      {colombia.map((pais) => (
+          <RelojColombia
             key={pais.nombre}
             pais={pais.nombre}
             zonaHoraria={pais.zonaHoraria}

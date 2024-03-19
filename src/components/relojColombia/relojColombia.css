@@ -25,16 +25,16 @@
   }
   
   
-  .barra-progreso-diac {
+  .barra-progreso-dia {
     height: 100%;
     transition: width 0.5s;
     position: relative;
   }
-  .barra-progreso-diac::after {
+  .barra-progreso-dia::after {
     content: "";
     position: absolute;
     top: -10px;
-    right: 0px; 
+    right: -3px; 
     height: 40px;
     width: 1px; 
     background-color: black; 
@@ -159,15 +159,23 @@
   
   
   /* BREAKS */
-  .breackc-España-Marketing{
+  .breackCo-España-Marketing{
     width: 2.08%;
     height: 10px;
     background-color: #3be780;
     position: absolute;
-    left: 41.666%;
+    left: 33.33%;
     z-index: 100;
   }
-  .breackc-Argentina-Marketing{
+  .breackCo-Argentina-Marketing{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:50%;
+    z-index: 100;
+  }
+  .breackCo-Colombia-Marketing{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
@@ -175,114 +183,106 @@
     left:58.33%;
     z-index: 100;
   }
-  .breackc-Colombia-Marketing{
-    width: 4.16%;
-    height: 10px;
-    background-color: #3be780;;
-    position: absolute;
-    left:66.66%;
-    z-index: 100;
-  }
   
-  .breackc-Chile-Marketing{
+  .breackCo-Chile-Marketing{
     width: 10.41%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
-    left:58.33%;
+    left:50%;
     z-index: 100;
   }
   
-  .breackc-Mexico-Marketing{
+  .breackCo-Mexico-Marketing{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
-    left:66.66%;
+    left:58.33%;
     z-index: 100;
   }
-  .breackc-España-Contable{
+  .breackCo-España-Contable{
     width: 2.08%;
     height: 10px;
     background-color: #3be780;
     position: absolute;
-    left: 41.66%;
+    left: 33.33%;
     z-index: 100;
   }
-  .breackc-Argentina-Contable{
+  .breackCo-Argentina-Contable{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
-    left:54.08%;
+    left:45.83%;
     z-index: 100;
   }
   
-  .breackc-Argentina-Rrhh{
+  .breackCo-Argentina-Rrhh{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
-    left:54.08%;
+    left:45.83%;
     z-index: 100;
   }
   
-  .breackc-España-Comercial{
+  .breackCo-España-Comercial{
     width: 12.5%;
     height: 10px;
     background-color: #3be780;
     position: absolute;
-    left: 41.666%;
+    left: 33.33%;
     z-index: 100;
   }
-  .breackc-Argentina-Comercial{
+  .breackCo-Colombia-Comercial{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;
+    position: absolute;
+    left: 66.66%;
+    z-index: 100;
+  }
+  .breackCo-Argentina-Comercial{
     width: 6.25%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:54.16%;
+    z-index: 100;
+  }
+  
+  .breackCo-Chile-Comercial{
+    width: 9%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:50%;
+    z-index: 100;
+  }
+  
+  .breackCo-Mexico-Comercial{
+    width: 8%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
     left:62.5%;
     z-index: 100;
   }
-  .breackc-Colombia-Comercial{
-    width: 4%;
-    height: 10px;
-    background-color: #3be780;;
-    position: absolute;
-    left:75%;
-    z-index: 100;
-  }
-  
-  .breackc-Chile-Comercial{
-    width: 10.41%;
-    height: 10px;
-    background-color: #3be780;;
-    position: absolute;
-    left:58.33%;
-    z-index: 100;
-  }
-  
-  .breackc-Mexico-Comercial{
-    width: 6.25%;
-    height: 10px;
-    background-color: #3be780;;
-    position: absolute;
-    left:72%;
-    z-index: 100;
-  }
-  .breackc-España-Coordinacion{
+  .breackCo-España-Coordinacion{
     width: 10.41%;
     height: 10px;
     background-color: #3be780;
     position: absolute;
-    left: 41.666%;
+    left: 33.33%;
     z-index: 100;
   }
-  .breackc-Argentina-Coordinacion{
+  .breackCo-Argentina-Coordinacion{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
     position: absolute;
-    left:58.33%;
+    left:50%;
     z-index: 100;
   }
   
@@ -290,58 +290,28 @@
   
   
   
-  #contenedor2c-Mexico-Marketing{
-   width: 37.5%;
-    height: 10px;
-    background-color: rgba(169, 130, 196, 0.507);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    position: absolute;
-    left: 41.66%;
-  }
-  #contenedor2c-Argentina-Marketing{
-     width: 37.5%;
-    height: 10px;
-    background-color: rgba(169, 130, 196, 0.507);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    position: absolute;
-    left: 33.33333%;
-  }
-  #contenedor2c-Colombia-Marketing{
+
+  #contenedor2Co-Colombia-Marketing{
     width: 37.5%;
-   height: 10px;
-   background-color: rgba(169, 130, 196, 0.507);
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   overflow: hidden;
-   position: absolute;
-   left: 41.66%;
- }
-  #contenedor2c-España-Marketing{
-     width: 36.458%;
-    height: 10px;
-    background-color:rgba(169, 130, 196, 0.507);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    position: absolute;
-    left: 25%
-  }
-  #contenedor2c-Chile-Marketing{
-     width: 43.75%;
-    height: 10px;
-    background-color: rgba(169, 130, 196, 0.507);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    position: absolute;
-    left:41.6666%
-  }
-  
-   #contenedor2c-Argentina-Contable{
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 33.33%;
+   }
+  #contenedor2Co-Mexico-Marketing{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 33.33%;
+   }
+   #contenedor2Co-Argentina-Marketing{
       width: 37.5%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -349,9 +319,41 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left: 33.33333%;
+     left: 25%;
    }
-   #contenedor2c-Chile-Contable{
+   
+   #contenedor2Co-España-Marketing{
+      width: 36.458%;
+     height: 10px;
+     background-color:rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 16.66%
+   }
+   #contenedor2Co-Chile-Marketing{
+      width: 43.75%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left:33.33%
+   }
+  
+   #contenedor2Co-Argentina-Contable{
+      width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 25%;
+   }
+   #contenedor2Co-Colombia-Contable{
     width: 37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -359,9 +361,9 @@
    border-radius: 4px;
    overflow: hidden;
    position: absolute;
-   left: 33.33333%;
+   left:25%;
  }
-   #contenedor2c-España-Contable{
+   #contenedor2Co-España-Contable{
       width: 34.375%;
      height: 10px;
      background-color:rgba(169, 130, 196, 0.507);
@@ -369,10 +371,11 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left: 25%
+     left: 16.66%
    }
+
   
-   #contenedor2c-Argentina-Rrhh{
+   #contenedor2Co-Argentina-Rrhh{
       width: 37.5%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -380,9 +383,9 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left: 33.33333%;
+     left: 25%;
    }
-   #contenedor2c-Chile-Rrhh{
+   #contenedor2Co-Colombia-Rrhh{
     width: 37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -390,19 +393,9 @@
    border-radius: 4px;
    overflow: hidden;
    position: absolute;
-   left: 33.33333%;
- }
-   #contenedor2c-España-Rrhh{
-    width: 37.5%;
-   height: 10px;
-   background-color: rgba(169, 130, 196, 0.507);
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   overflow: hidden;
-   position: absolute;
-   left: 33.33%;
+   left: 25%;
   }
-   #contenedor2c-Mexico-Comercial{
+   #contenedor2Co-Mexico-Comercial{
     width: 43.75%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -410,9 +403,9 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left: 54.16%;
+     left: 45.83%;
    }
-   #contenedor2c-Argentina-Comercial{
+   #contenedor2Co-Argentina-Comercial{
       width: 43.75%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -420,19 +413,20 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left:41.6666%
+     left:33.33%
    }
-   #contenedor2c-Colombia-Comercial{
-    width: 41%;
+
+ #contenedor2Co-Colombia-Comercial{
+    width: 41.66%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
    border: 1px solid #ccc;
    border-radius: 4px;
    overflow: hidden;
    position: absolute;
-   left:58.33%
+   left:50%
  }
-   #contenedor2c-España-Comercial{
+   #contenedor2Co-España-Comercial{
       width: 44.79%;
      height: 10px;
      background-color:rgba(169, 130, 196, 0.507);
@@ -440,9 +434,9 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left: 25%
+     left: 16.66%
    }
-   #contenedor2c-Chile-Comercial{
+   #contenedor2Co-Chile-Comercial{
       width: 43.75%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -450,9 +444,9 @@
      border-radius: 4px;
      overflow: hidden;
      position: absolute;
-     left:41.6666%
+     left:33.33%
    }
-   #contenedor2c-Argentina-Coordinacion{
+   #contenedor2Co-Argentina-Coordinacion{
     width:37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -460,19 +454,9 @@
    border-radius: 4px;
    overflow: hidden;
    position: absolute;
-   left: 41.66%;
+   left:33.33%;
   }
-  #contenedor2c-Chile-Coordinacion{
-    width:37.5%;
-   height: 10px;
-   background-color: rgba(169, 130, 196, 0.507);
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   overflow: hidden;
-   position: absolute;
-   left: 41.66%;
-  }
-  #contenedor2c-España-Coordinacion{
+  #contenedor2Co-España-Coordinacion{
     width:  42.7083%;
    height: 10px;
    background-color:rgba(169, 130, 196, 0.507);
@@ -480,7 +464,17 @@
    border-radius: 4px;
    overflow: hidden;
    position: absolute;
-   left: 25%
+   left: 16.66%
+  }
+  #contenedor2Co-Colombia-Coordinacion{
+    width:37.5%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 33.33%;
   }
   .jornada-item{
     display: flex;

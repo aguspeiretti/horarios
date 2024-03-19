@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import moment from "moment-timezone";
-import "./barra24arg.css";
+import "./barra24chi.css";
 
-const Barra24Arg = () => {
+const Barra24chi = () => {
   const [progresoDia, setProgresoDia] = useState(0);
 
   useEffect(() => {
@@ -38,9 +38,9 @@ const Barra24Arg = () => {
 
   return (
     <div className="contenedor-total">
-      <div className="barra-progreso-dia" style={barraStyle}></div>
+      <div className="barra-progreso-diac" style={barraStyle}></div>
     </div>
   );
 };
 
-export default Barra24Arg;
+export default Barra24chi;

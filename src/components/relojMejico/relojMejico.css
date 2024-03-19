@@ -175,6 +175,14 @@
     left:45.83%;
     z-index: 100;
   }
+  .breackm-Colombia-Marketing{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:54.16%;
+    z-index: 100;
+  }
   
   .breackm-Chile-Marketing{
     width: 10.41%;
@@ -233,6 +241,14 @@
     background-color: #3be780;;
     position: absolute;
     left:50%;
+    z-index: 100;
+  }
+  .breackm-Colombia-Comercial{
+    width: 4%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:37.5%;
     z-index: 100;
   }
   
@@ -294,6 +310,16 @@
     position: absolute;
     left: 20.83%;
   }
+  #contenedor2m-Colombia-Marketing{
+    width: 37.5%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 29.16%;
+ }
   #contenedor2m-España-Marketing{
      width:34.375%;
     height: 10px;
@@ -325,6 +351,7 @@
      position: absolute;
      left:20.83%;
    }
+   
    #contenedor2m-España-Contable{
       width: 34.375%;
      height: 10px;
@@ -396,6 +423,16 @@
      position: absolute;
      left:29.16%
    }
+   #contenedor2m-Colombia-Comercial{
+    width: 42%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left:20.83%
+ }
    #contenedor2m-España-Comercial{
       width: 43.79%;
      height: 10px;
@@ -417,6 +454,26 @@
      left:29.16%
    }
    #contenedor2m-Argentina-Coordinacion{
+    width:37.5%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 29.16%;
+  }
+  #contenedor2m-Mexico-Coordinacion{
+    width:37.5%;
+   height: 10px;
+   background-color: rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 29.16%;
+  }
+  #contenedor2m-Mexico-Gestion{
     width:37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);

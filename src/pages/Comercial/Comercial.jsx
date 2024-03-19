@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import Reloj from "../../components/reloj/Reloj";
 import RelojChile from "../../components/relojChile/RelojChile";
+import RelojColombia from "../../components/relojColombia/RelojColombia";
 import RelojEspaña from "../../components/relojEspaña/RelojEspaña";
 import RelojMejico from "../../components/relojMejico/RelojMejico";
 import "./Comercial.css";
@@ -41,6 +42,14 @@ const Comercial = ({vpn}) => {
       horaIngreso: 10,
       horaSalida: 17,
     },
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 10.6,
+      horaIngreso: 12 ,
+      horaSalida: 22,
+    },
   ];
   const españa = [
     {
@@ -74,6 +83,14 @@ const Comercial = ({vpn}) => {
       jornadaLaboral: 11,
       horaIngreso: 10,
       horaSalida: 17,
+    },
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 10.6,
+      horaIngreso: 12 ,
+      horaSalida: 22,
     },
   ];
   const chile = [
@@ -110,6 +127,14 @@ const Comercial = ({vpn}) => {
       horaIngreso: 10,
       horaSalida: 17,
     },
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 10.6,
+      horaIngreso: 12 ,
+      horaSalida: 22,
+    },
   ];
   const mexico= [
     {
@@ -144,14 +169,77 @@ const Comercial = ({vpn}) => {
       horaIngreso: 10,
       horaSalida: 20.5,
     },
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral:8.8,
+      horaIngreso: 7 ,
+      horaSalida: 16,
+    },
+  ];
+  const colombia= [
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 10.6,
+      horaIngreso: 12 ,
+      horaSalida: 22,
+    },
+    {
+      nombre: "Argentina",
+      area: "Comercial",
+      zonaHoraria: "America/Argentina/Buenos_Aires",
+      jornadaLaboral: 10.6,
+      horaIngreso: 10,
+      horaSalida: 20.5,
+    },
+    {
+      nombre: "España",
+      area: "Comercial",
+      zonaHoraria: "Europe/Madrid",
+      jornadaLaboral: 10.65,
+      horaIngreso: 10,
+      horaSalida: 21.45,
+    },
+    {
+      nombre: "Mexico",
+      area: "Comercial",
+      zonaHoraria: "America/Mexico_City",
+      jornadaLaboral: 10.8,
+      horaIngreso: 10,
+      horaSalida: 17,
+    },
+    {
+      nombre: "Colombia",
+      area: "Comercial",
+      zonaHoraria: "America/Bogota",
+      jornadaLaboral: 10.6,
+      horaIngreso: 12 ,
+      horaSalida: 22,
+    },
+
+    {
+      nombre: "Chile",
+      area: "Comercial",
+      zonaHoraria: "Chile/Continental",
+      jornadaLaboral: 10.6,
+      horaIngreso: 10,
+      horaSalida: 20.5,
+    },
  
 
 
   ];
   return (
     <>
-      <div>
+       <div className="titular">
         <h2 className="titulo">Comercial</h2>
+        <div className="indicacion">
+          <div className="seña"></div>
+          <p>Horario de break</p>
+        </div>
       </div>
       <div>
       {vpn === "Argentina" ?   (
@@ -211,7 +299,21 @@ const Comercial = ({vpn}) => {
           />
         ))}
       </div> 
-    ) : null }
+    ) : vpn === "Colombia" ? (
+      <div>
+      {colombia.map((pais) => (
+          <RelojColombia
+            key={pais.nombre}
+            pais={pais.nombre}
+            zonaHoraria={pais.zonaHoraria}
+            jornadaLaboral={pais.jornadaLaboral}
+            horaIngreso={pais.horaIngreso}
+            horaSalida={pais.horaSalida}
+            area={pais.area}
+          />
+        ))}
+      </div> 
+    ) : null}
       </div>
     </>
   );

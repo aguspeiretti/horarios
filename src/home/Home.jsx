@@ -8,6 +8,7 @@ import Rrhh from "../pages/Recursos_humanos/Rrhh";
 import banner from "../assets/banner-02.png";
 import Nav from "../components/nav/Nav";
 import "./home.css";
+import Gestion from "../pages/Gestion/Gestion";
 
 
 const Home = ( {vpn} ) => {
@@ -29,6 +30,7 @@ const Home = ( {vpn} ) => {
               <Route path="/contable" element={<Contable vpn={vpn}  />} />
               <Route path="/recursos-humanos" element={<Rrhh vpn={vpn}  />} />
               <Route path="/comercial" element={<Comercial vpn={vpn}  />} />
+              <Route path="/gestion" element={<Gestion vpn={vpn} />} />
               <Route path="/coordinacion" element={<Coordinacion vpn={vpn}  />} />
             </Routes>
           </div>
