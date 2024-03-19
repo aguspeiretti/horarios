@@ -47,9 +47,9 @@ console.log(vpn);
       nombre: "Colombia",
       area: "Marketing",
       zonaHoraria: "America/Bogota",
-      jornadaLaboral: 9,
-      horaIngreso: 6,
-      horaSalida: 15,
+      jornadaLaboral: 8.9,
+      horaIngreso:8,
+      horaSalida: 17,
     },
   ];
   const españa = [
@@ -123,7 +123,7 @@ console.log(vpn);
       nombre: "Colombia",
       area: "Marketing",
       zonaHoraria: "America/Bogota",
-      jornadaLaboral: 8.9,
+      jornadaLaboral:9 ,
       horaIngreso: 8,
       horaSalida: 17,
     },
