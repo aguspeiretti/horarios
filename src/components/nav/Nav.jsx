@@ -9,8 +9,8 @@ const Nav = () => {
           <Link to={"/"}>
             <li>Marketing</li>{" "}
           </Link>
-          <Link to={"/comercial"}>
-            <li>Comercial</li>
+          <Link to={"/ventas"}>
+            <li>Ventas</li>
           </Link>
           <Link to={"/coordinacion"}>
             <li>Coordinación</li>
@@ -21,8 +21,8 @@ const Nav = () => {
           <Link to={"/recursos-humanos"}>
             <li>Recursos humanos</li>
           </Link>
-          <Link to={"/contable"}>
-            <li>Contable</li>
+          <Link to={"/administracion"}>
+            <li>Administracion</li>
           </Link>
 
         </ul>

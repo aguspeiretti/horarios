@@ -27,9 +27,9 @@ const Home = ( {vpn} ) => {
             </div>
             <Routes>
               <Route path="/" element={<Marketing vpn={vpn} />}  />
-              <Route path="/contable" element={<Contable vpn={vpn}  />} />
+              <Route path="/administracion" element={<Contable vpn={vpn}  />} />
               <Route path="/recursos-humanos" element={<Rrhh vpn={vpn}  />} />
-              <Route path="/comercial" element={<Comercial vpn={vpn}  />} />
+              <Route path="/ventas" element={<Comercial vpn={vpn}  />} />
               <Route path="/gestion" element={<Gestion vpn={vpn} />} />
               <Route path="/coordinacion" element={<Coordinacion vpn={vpn}  />} />
             </Routes>
