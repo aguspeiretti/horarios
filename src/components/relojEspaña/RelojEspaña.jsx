@@ -2,12 +2,12 @@
 // Reloj.js
 import { useState, useEffect } from "react";
 import moment from "moment-timezone";
-import "./reloj.css";
+import "./relojEspaña.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import Barra24Arg from "../barra24Argentina/Barra24Arg";
+import Barra24esp from "../barra24España/Barra24esp";
 
-const Reloj = ({
+const RelojEspaña = ({
   pais,
   zonaHoraria,
   jornadaLaboral,
@@ -62,20 +62,20 @@ const Reloj = ({
   // Generar los números del 0 al 24
   const ordenNumerosPorPais = {
     Argentina: [
-      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      21, 22, 23, 24,
+        21, 22, 23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+        18, 19, 20, 
     ],
     Chile: [
-      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-      21, 22, 23, 24,
+        21, 22, 23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+        18, 19, 20, 
     ],
     España: [
-      4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
-      24, 0, 1, 2, 3,
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24,
     ],
     Mexico: [
-      22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-      18, 19, 20, 21,
+         18, 19, 20, 21, 22,23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+      15,16, 17,
     ],
     // Añade más países y sus respectivos órdenes aquí si es necesario
   };
@@ -202,11 +202,11 @@ const Reloj = ({
         </div>
         <div className="reductor">
           <div className="contenedorBarra">
-            <Barra24Arg pais={pais} zonaHoraria={zonaHoraria} />
-            <div className={`breack-${pais}-${area}`}></div>
+            <Barra24esp pais={pais} zonaHoraria={zonaHoraria} />
+            <div className={`breacke-${pais}-${area}`}></div>
             <div className="regla">{numerosRegla}</div>
             <div
-              id={`contenedor2-${pais}-${area}`}
+              id={`contenedor2e-${pais}-${area}`}
               className="contenedor-total"
             >
               <div
@@ -222,4 +222,4 @@ const Reloj = ({
   );
 };
 
-export default Reloj;
+export default RelojEspaña;

@@ -2,12 +2,12 @@
 // Reloj.js
 import { useState, useEffect } from "react";
 import moment from "moment-timezone";
-import "./reloj.css";
+import "./relojChile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import Barra24Arg from "../barra24Argentina/Barra24Arg";
 
-const Reloj = ({
+const RelojChile = ({
   pais,
   zonaHoraria,
   jornadaLaboral,
@@ -203,10 +203,10 @@ const Reloj = ({
         <div className="reductor">
           <div className="contenedorBarra">
             <Barra24Arg pais={pais} zonaHoraria={zonaHoraria} />
-            <div className={`breack-${pais}-${area}`}></div>
+            <div className={`breackc-${pais}-${area}`}></div>
             <div className="regla">{numerosRegla}</div>
             <div
-              id={`contenedor2-${pais}-${area}`}
+              id={`contenedor2c-${pais}-${area}`}
               className="contenedor-total"
             >
               <div
@@ -222,4 +222,4 @@ const Reloj = ({
   );
 };
 
-export default Reloj;
+export default RelojChile;

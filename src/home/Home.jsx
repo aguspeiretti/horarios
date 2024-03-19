@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Comercial from "../pages/Comercial/Comercial";
 import Contable from "../pages/Contable/Contable";
 import Coordinacion from "../pages/Coordinacion/Coordinacion";
@@ -7,12 +8,13 @@ import Rrhh from "../pages/Recursos_humanos/Rrhh";
 import banner from "../assets/banner-02.png";
 import Nav from "../components/nav/Nav";
 import "./home.css";
-import Working from "../components/Working/Working";
 
-const Home = ({ pais }) => {
+
+const Home = ( {vpn} ) => {
+
   return (
     <>
-      {pais === "Argentina" ? (
+      
         <div className="contenedor-principal">
           <div className="contenedor-banner">
             <img src={banner} alt="banner" />
@@ -23,17 +25,15 @@ const Home = ({ pais }) => {
               <Nav />
             </div>
             <Routes>
-              <Route path="/" element={<Marketing />} />
-              <Route path="/contable" element={<Contable />} />
-              <Route path="/recursos-humanos" element={<Rrhh />} />
-              <Route path="/comercial" element={<Comercial />} />
-              <Route path="/coordinacion" element={<Coordinacion />} />
+              <Route path="/" element={<Marketing vpn={vpn} />}  />
+              <Route path="/contable" element={<Contable vpn={vpn}  />} />
+              <Route path="/recursos-humanos" element={<Rrhh vpn={vpn}  />} />
+              <Route path="/comercial" element={<Comercial vpn={vpn}  />} />
+              <Route path="/coordinacion" element={<Coordinacion vpn={vpn}  />} />
             </Routes>
           </div>
         </div>
-      ) : (
-        <Working />
-      )}
+    
     </>
   );
 };

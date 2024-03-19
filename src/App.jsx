@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./home/Home";
+import Loader from "./components/loader/Loader";
 
 const App = () => {
-  const [pais, setPais] = useState("");
-  console.log(pais);
+  const [vpn, setVpn] = useState("");
+  console.log(vpn);
 
   useEffect(() => {
     const obtenerPaisPorIP = async () => {
@@ -22,7 +23,7 @@ const App = () => {
     obtenerPaisPorIP().then((pais) => {
       if (pais) {
         console.log("El país detectado es:", pais);
-        setPais(pais);
+        setVpn(pais);
         // Aquí puedes hacer lo que necesites con el país detectado
       } else {
         console.log("No se pudo detectar el país.");
@@ -30,7 +31,7 @@ const App = () => {
     });
   }, []);
 
-  return <>{pais ? <Home pais={pais} /> : "Cargando..."}</>;
+  return <>{vpn ? <Home vpn={vpn} /> : <Loader />}</>;
 };
 
 export default App;
