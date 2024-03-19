@@ -9,21 +9,22 @@ const Nav = () => {
           <Link to={"/"}>
             <li>Marketing</li>{" "}
           </Link>
-          <Link to={"/contable"}>
-            <li>Contable</li>
-          </Link>
-          <Link to={"/recursos-humanos"}>
-            <li>Recursos humanos</li>
-          </Link>
           <Link to={"/comercial"}>
             <li>Comercial</li>
-          </Link>
-          <Link to={"/gestion"}>
-            <li>Gestión</li>
           </Link>
           <Link to={"/coordinacion"}>
             <li>Coordinación</li>
           </Link>
+          <Link to={"/gestion"}>
+            <li>Gestión</li>
+          </Link>
+          <Link to={"/recursos-humanos"}>
+            <li>Recursos humanos</li>
+          </Link>
+          <Link to={"/contable"}>
+            <li>Contable</li>
+          </Link>
+
         </ul>
       </div>
     </div>
