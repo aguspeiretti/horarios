@@ -31,7 +31,7 @@ const Rrhh = ({ vpn }) => {
       nombre: "España",
       area: "Rrhh",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 10.8,
+      jornadaLaboral: 9.8,
       horaIngreso: 12,
       horaSalida: 21,
     },

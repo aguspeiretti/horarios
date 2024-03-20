@@ -1,29 +1,4 @@
-/* reloj.css */
-.reloj {
-    margin: 20px;
-    padding: 0 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-  }
-  
-  .reductor{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  .paisInfo {
-    width: 50%;
-  }
-  .barra-progreso {
-    height: 100%;
-    transition: width 0.5s;
-    position: relative;
-  }
-  
+
   
   .barra-progreso-diae {
     height: 100%;
@@ -39,125 +14,8 @@
     width: 1px; 
     background-color: black; 
     z-index: 1000;
-    /* content: "";
-    position: absolute;
-    top: -6px;
-    right: -5px; 
-    height: 20px;
-    width: 20px;
-    background-image: url("../../assets/solo-icono.gif");
-    background-size: cover; 
-    z-index: 1000; */
   }
-  .infoContainer{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contenedorBarra{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  
-  }
-  
-  
-  
-  .contenedor-completo{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  
-  .regla {
-    display: flex;
-    width: 102%;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    top:  15px;
-    left: -8px;
-    z-index: 100;
-  }
-  
-  .regla div {
-    flex: 1;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    position: relative; /* Añade esta línea */
-  }
-  
-  .regla div::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%; /* Ajusta la posición del palito */
-    transform: translateX(-50%);
-    width: 1px;
-    height: 3px;
-    background-color: black; /* Color del palito */
-  }
-  
-  .nombreyhora{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-    
-    ;
-  }
-  
-  .nombrePais{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nombrePais h5{
-  margin-bottom: 10px;
-  background-color: #643B9F;
-  padding: 2px 15px;
-  border-radius: 15px;
-  color: white;
-  }
-  
-  .contenedor-reloj{
-  
-   width:auto;
-  }
-  .svg-reloj{
-    width: 40px;
-    height: 40px;
-  background-color: black;
-  border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    
-  }
-  .contenedor-segundero{
-    width: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-reloj-superior{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  
-  
+
   /* BREAKS */
   .breacke-España-Marketing{
     width: 2.08%;
@@ -330,6 +188,16 @@
     position: absolute;
     left: 41.66%
   }
+  #contenedor2eViernes-España-Marketing{
+    width:35%;
+   height: 10px;
+   background-color:rgba(169, 130, 196, 0.507);
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   position: absolute;
+   left: 41.66%
+ }
   #contenedor2e-Chile-Marketing{
      width: 43.75%;
     height: 10px;
@@ -452,9 +320,5 @@
    position: absolute;
    left: 41.66%
   }
-  .jornada-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
+

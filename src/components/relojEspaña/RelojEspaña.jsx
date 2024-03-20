@@ -17,6 +17,27 @@ const RelojEspaña = ({
 }) => {
   const [horaActual, setHoraActual] = useState("");
   const [progresoJornada, setProgresoJornada] = useState(0);
+  const [dia, setDia] = useState("");
+
+  useEffect(() => {
+    const obtenerDiaActual = () => {
+      const diasSemana = [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+      ];
+      const fecha = new Date();
+      const diaActual = diasSemana[fecha.getDay()];
+      setDia(diaActual);
+      console.log(diaActual);
+      return diaActual;
+    };
+    obtenerDiaActual();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -62,26 +83,25 @@ const RelojEspaña = ({
   // Generar los números del 0 al 24
   const ordenNumerosPorPais = {
     Argentina: [
-        21, 22, 23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-        18, 19, 20, 
+      21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+      17, 18, 19, 20,
     ],
     Chile: [
-        21, 22, 23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-        18, 19, 20, 
+      21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+      17, 18, 19, 20,
     ],
     España: [
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24,
     ],
     Mexico: [
-         18, 19, 20, 21, 22,23, 24,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-      15,16, 17,
+      18, 19, 20, 21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+      14, 15, 16, 17,
     ],
     Colombia: [
-       19, 20, 21,22,23, 24,  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-     18
-   ],
-   
+      19, 20, 21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+      15, 16, 17, 18,
+    ],
   };
 
   const horariosPais = {
@@ -158,7 +178,7 @@ const RelojEspaña = ({
         salida: "20.00",
       },
     ],
-    Colombia:[
+    Colombia: [
       {
         area: "Marketing",
         inicio: "08.00",
@@ -169,11 +189,99 @@ const RelojEspaña = ({
         inicio: "12.00",
         salida: "22.00",
       },
-    ]
+    ],
+  };
+  const horariosPaisViernes = {
+    Argentina: [
+      {
+        area: "Marketing",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Contable",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Rrhh",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Coordinacion",
+        inicio: "10.00",
+        salida: "19.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+    ],
+    Chile: [
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+      {
+        area: "Marketing",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+    ],
+    España: [
+      {
+        area: "Marketing",
+        inicio: "10.00",
+        salida: "18.30",
+      },
+      {
+        area: "Contable",
+        inicio: "10.00",
+        salida: "18.30",
+      },
+      {
+        area: "Coordinacion",
+        inicio: "10.00",
+        salida: "20.30",
+      },
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "21.00",
+      },
+    ],
+    Mexico: [
+      {
+        area: "Marketing",
+        inicio: "07.00",
+        salida: "16.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "10.00",
+        salida: "20.00",
+      },
+    ],
+    Colombia: [
+      {
+        area: "Marketing",
+        inicio: "08.00",
+        salida: "17.00",
+      },
+      {
+        area: "Comercial",
+        inicio: "12.00",
+        salida: "22.00",
+      },
+    ],
   };
 
   // Obtener los horarios para el país y área específicos
-  const horariosPorPais = horariosPais[pais];
+  const horariosPorPais =
+    dia === "Viernes" ? horariosPaisViernes[pais] : horariosPais[pais];
   const horariosPorArea = horariosPorPais.filter(
     (horario) => horario.area === area
   );
@@ -221,16 +329,29 @@ const RelojEspaña = ({
             <Barra24esp pais={pais} zonaHoraria={zonaHoraria} />
             <div className={`breacke-${pais}-${area}`}></div>
             <div className="regla">{numerosRegla}</div>
-            <div
-              id={`contenedor2e-${pais}-${area}`}
-              className="contenedor-total"
-            >
+            {dia === "viernes" ? (
               <div
-                className="barra-progreso"
-                id={`barra-${pais}`}
-                style={barraStyle}
-              ></div>
-            </div>
+                id={`contenedor2eViernes-${pais}-${area}`}
+                className="contenedor-total"
+              >
+                <div
+                  className="barra-progreso"
+                  id={`barra-${pais}`}
+                  style={barraStyle}
+                ></div>
+              </div>
+            ) : (
+              <div
+                id={`contenedor2e-${pais}-${area}`}
+                className="contenedor-total"
+              >
+                <div
+                  className="barra-progreso"
+                  id={`barra-${pais}`}
+                  style={barraStyle}
+                ></div>
+              </div>
+            )}
           </div>
         </div>
       </div>

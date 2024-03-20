@@ -9,33 +9,44 @@ import banner from "../assets/banner-02.png";
 import Nav from "../components/nav/Nav";
 import "./home.css";
 import Gestion from "../pages/Gestion/Gestion";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
+const Home = ({ vpn }) => {
+  const [menu, setMenu] = useState(false);
 
-const Home = ( {vpn} ) => {
-
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
   return (
     <>
-      
-        <div className="contenedor-principal">
-          <div className="contenedor-banner">
-            <img src={banner} alt="banner" />
-          </div>
-
-          <div className="contenedor-paises">
-            <div className="contenedor-nav">
-              <Nav />
-            </div>
-            <Routes>
-              <Route path="/" element={<Marketing vpn={vpn} />}  />
-              <Route path="/administracion" element={<Contable vpn={vpn}  />} />
-              <Route path="/recursos-humanos" element={<Rrhh vpn={vpn}  />} />
-              <Route path="/ventas" element={<Comercial vpn={vpn}  />} />
-              <Route path="/gestion" element={<Gestion vpn={vpn} />} />
-              <Route path="/coordinacion" element={<Coordinacion vpn={vpn}  />} />
-            </Routes>
-          </div>
+      <div onClick={handleMenu} className="contenedor-principal">
+        <div className="navMobile">
+          {menu ? (
+            <FontAwesomeIcon icon={faX} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
         </div>
-    
+        <div className="contenedor-banner">
+          <img src={banner} alt="banner" />
+        </div>
+
+        <div className="contenedor-paises">
+          <div className={menu ? "contenedor-nav-abierto" : "contenedor-nav"}>
+            <Nav />
+          </div>
+          <Routes>
+            <Route path="/" element={<Marketing vpn={vpn} />} />
+            <Route path="/administracion" element={<Contable vpn={vpn} />} />
+            <Route path="/recursos-humanos" element={<Rrhh vpn={vpn} />} />
+            <Route path="/ventas" element={<Comercial vpn={vpn} />} />
+            <Route path="/gestion" element={<Gestion vpn={vpn} />} />
+            <Route path="/coordinacion" element={<Coordinacion vpn={vpn} />} />
+          </Routes>
+        </div>
+      </div>
     </>
   );
 };
