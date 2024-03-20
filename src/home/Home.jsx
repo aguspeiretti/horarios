@@ -29,9 +29,9 @@ const Home = ({ vpn }) => {
             <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff" }} />
           )}
         </div>
-        <div className="contenedor-banner">
+        {/* <div className="contenedor-banner">
           <img src={banner} alt="banner" />
-        </div>
+        </div> */}
 
         <div className="contenedor-paises">
           <div className={menu ? "contenedor-nav-abierto" : "contenedor-nav"}>
