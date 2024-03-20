@@ -667,7 +667,7 @@ border-radius: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
   position: relative; /* Añade esta línea */
-  font-size: 12px;
+  font-size: 9.5px;
 }
 
 .regla div::after {
@@ -733,7 +733,7 @@ display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 10px;
+  font-size: 12px;
 }
     .contenedorBarra{
   width: 100%;
