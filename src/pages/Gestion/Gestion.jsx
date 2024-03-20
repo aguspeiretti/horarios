@@ -6,7 +6,7 @@ import RelojColombia from "../../components/relojColombia/RelojColombia";
 import RelojEspaña from "../../components/relojEspaña/RelojEspaña";
 import RelojMejico from "../../components/relojMejico/RelojMejico";
 
-const Gestion = ({vpn}) => {
+const Gestion = ({ vpn }) => {
   const paises = [
     {
       nombre: "Argentina",
@@ -42,9 +42,8 @@ const Gestion = ({vpn}) => {
       horaIngreso: 10,
       horaSalida: 20.5,
     },
-
   ];
- 
+
   const colombia = [
     {
       nombre: "Colombia",
@@ -52,7 +51,7 @@ const Gestion = ({vpn}) => {
       zonaHoraria: "America/Bogota",
       jornadaLaboral: 9.2,
       horaIngreso: 8,
-      horaSalida: 17    ,
+      horaSalida: 17,
     },
     {
       nombre: "Argentina",
@@ -66,20 +65,20 @@ const Gestion = ({vpn}) => {
       nombre: "España",
       area: "Coordinacion",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 10.12,
+      jornadaLaboral: 10.7,
       horaIngreso: 10,
       horaSalida: 20,
     },
   ];
   const mejico = [
     {
-        nombre: "Mexico",
-        area: "Gestion",
-        zonaHoraria: "America/Mexico_City",
-        jornadaLaboral: 9.1,
-        horaIngreso: 7,
-        horaSalida: 16,
-      },
+      nombre: "Mexico",
+      area: "Gestion",
+      zonaHoraria: "America/Mexico_City",
+      jornadaLaboral: 9.1,
+      horaIngreso: 7,
+      horaSalida: 16,
+    },
     {
       nombre: "Argentina",
       area: "Coordinacion",
@@ -92,20 +91,20 @@ const Gestion = ({vpn}) => {
       nombre: "España",
       area: "Coordinacion",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 10.12,
+      jornadaLaboral: 10.5,
       horaIngreso: 10,
       horaSalida: 20,
     },
   ];
   const chile = [
     {
-        nombre: "Chile",
-        area: "Coordinacion",
-        zonaHoraria: "Chile/Continental",
-        jornadaLaboral: 9.1,
-        horaIngreso: 10,
-        horaSalida: 19,
-      },
+      nombre: "Chile",
+      area: "Coordinacion",
+      zonaHoraria: "Chile/Continental",
+      jornadaLaboral: 9.1,
+      horaIngreso: 10,
+      horaSalida: 19,
+    },
     {
       nombre: "Argentina",
       area: "Coordinacion",
@@ -125,59 +124,58 @@ const Gestion = ({vpn}) => {
   ];
   return (
     <>
-       <div className="titular">
+      <div className="titular">
         <h2 className="titulo">Gestión</h2>
         <div className="indicacion">
           <div className="seña"></div>
           <p>Horario de break</p>
         </div>
       </div>
-      {vpn === "Argentina" ?   (
-      <div>
-      {paises.map((pais) => (
-        <Reloj
-          key={pais.nombre}
-          pais={pais.nombre}
-          zonaHoraria={pais.zonaHoraria}
-          jornadaLaboral={pais.jornadaLaboral}
-          horaIngreso={pais.horaIngreso}
-          horaSalida={pais.horaSalida}
-          area={pais.area}
-        />
-      ))}
-    
-    </div>
-    ) : vpn === "Colombia" ? (
-      <div>
-      {colombia.map((pais) => (
-          <RelojColombia
-            key={pais.nombre}
-            pais={pais.nombre}
-            zonaHoraria={pais.zonaHoraria}
-            jornadaLaboral={pais.jornadaLaboral}
-            horaIngreso={pais.horaIngreso}
-            horaSalida={pais.horaSalida}
-            area={pais.area}
-          />
-        ))}
-      </div> 
-    ) : vpn === "Spain" ? (
-      <div>
-      {españa.map((pais) => (
-          <RelojEspaña
-            key={pais.nombre}
-            pais={pais.nombre}
-            zonaHoraria={pais.zonaHoraria}
-            jornadaLaboral={pais.jornadaLaboral}
-            horaIngreso={pais.horaIngreso}
-            horaSalida={pais.horaSalida}
-            area={pais.area}
-          />
-        ))}
-      </div> 
-    )  : vpn === "Mexico" ? (
+      {vpn === "Argentina" ? (
         <div>
-        {mejico.map((pais) => (
+          {paises.map((pais) => (
+            <Reloj
+              key={pais.nombre}
+              pais={pais.nombre}
+              zonaHoraria={pais.zonaHoraria}
+              jornadaLaboral={pais.jornadaLaboral}
+              horaIngreso={pais.horaIngreso}
+              horaSalida={pais.horaSalida}
+              area={pais.area}
+            />
+          ))}
+        </div>
+      ) : vpn === "Colombia" ? (
+        <div>
+          {colombia.map((pais) => (
+            <RelojColombia
+              key={pais.nombre}
+              pais={pais.nombre}
+              zonaHoraria={pais.zonaHoraria}
+              jornadaLaboral={pais.jornadaLaboral}
+              horaIngreso={pais.horaIngreso}
+              horaSalida={pais.horaSalida}
+              area={pais.area}
+            />
+          ))}
+        </div>
+      ) : vpn === "Spain" ? (
+        <div>
+          {españa.map((pais) => (
+            <RelojEspaña
+              key={pais.nombre}
+              pais={pais.nombre}
+              zonaHoraria={pais.zonaHoraria}
+              jornadaLaboral={pais.jornadaLaboral}
+              horaIngreso={pais.horaIngreso}
+              horaSalida={pais.horaSalida}
+              area={pais.area}
+            />
+          ))}
+        </div>
+      ) : vpn === "Mexico" ? (
+        <div>
+          {mejico.map((pais) => (
             <RelojMejico
               key={pais.nombre}
               pais={pais.nombre}
@@ -188,10 +186,10 @@ const Gestion = ({vpn}) => {
               area={pais.area}
             />
           ))}
-        </div> 
-      )  : vpn === "Chile" ? (
+        </div>
+      ) : vpn === "Chile" ? (
         <div>
-        {chile.map((pais) => (
+          {chile.map((pais) => (
             <RelojChile
               key={pais.nombre}
               pais={pais.nombre}
@@ -202,8 +200,8 @@ const Gestion = ({vpn}) => {
               area={pais.area}
             />
           ))}
-        </div> 
-      )  : null}
+        </div>
+      ) : null}
     </>
   );
 };
