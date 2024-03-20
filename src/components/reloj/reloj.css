@@ -84,7 +84,7 @@
   top:  15px;
   left: -8px;
   z-index: 100;
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div {
@@ -92,7 +92,7 @@
   text-align: center;
   color: rgb(0, 0, 0);
   position: relative; /* Añade esta línea */
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div::after {
@@ -517,7 +517,7 @@ border-radius: 5px;
   top:  -10px;
   left: -8px;
   z-index: 100;
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div {
@@ -525,7 +525,7 @@ border-radius: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
   position: relative; /* Añade esta línea */
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div::after {
@@ -665,7 +665,7 @@ border-radius: 5px;
   top:  -10px;
   left: -8px;
   z-index: 100;
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div {
@@ -673,7 +673,7 @@ border-radius: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
   position: relative; /* Añade esta línea */
-  font-size: 8px;
+  font-size: 9.2px;
 }
 
 .regla div::after {
