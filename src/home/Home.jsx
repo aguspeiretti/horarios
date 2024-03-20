@@ -21,8 +21,8 @@ const Home = ({ vpn }) => {
   };
   return (
     <>
-      <div onClick={handleMenu} className="contenedor-principal">
-        <div className="navMobile">
+      <div className="contenedor-principal">
+        <div onClick={handleMenu} className="navMobile">
           {menu ? (
             <FontAwesomeIcon icon={faX} />
           ) : (
