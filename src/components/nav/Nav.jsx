@@ -1,30 +1,29 @@
 import "./nav.css";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({ handleMenu }) => {
   return (
     <div className="navbar">
       <div className="links">
         <ul>
           <Link to={"/"}>
-            <li>Marketing</li>{" "}
+            <li onClick={handleMenu}>Marketing</li>{" "}
           </Link>
           <Link to={"/ventas"}>
-            <li>Ventas</li>
+            <li onClick={handleMenu}>Ventas</li>
           </Link>
           <Link to={"/coordinacion"}>
-            <li>Coordinación</li>
+            <li onClick={handleMenu}>Coordinación</li>
           </Link>
           <Link to={"/gestion"}>
-            <li>Gestión</li>
+            <li onClick={handleMenu}>Gestión</li>
           </Link>
           <Link to={"/recursos-humanos"}>
-            <li>Recursos humanos</li>
+            <li onClick={handleMenu}>Recursos humanos</li>
           </Link>
           <Link to={"/administracion"}>
-            <li>Administracion</li>
+            <li onClick={handleMenu}>Administracion</li>
           </Link>
-
         </ul>
       </div>
     </div>

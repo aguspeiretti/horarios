@@ -35,7 +35,7 @@ const Home = ({ vpn }) => {
 
         <div className="contenedor-paises">
           <div className={menu ? "contenedor-nav-abierto" : "contenedor-nav"}>
-            <Nav />
+            <Nav handleMenu={handleMenu} />
           </div>
           <Routes>
             <Route path="/" element={<Marketing vpn={vpn} />} />
