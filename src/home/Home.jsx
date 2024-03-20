@@ -26,7 +26,7 @@ const Home = ({ vpn }) => {
           {menu ? (
             <FontAwesomeIcon icon={faX} />
           ) : (
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff" }} />
           )}
         </div>
         <div className="contenedor-banner">
