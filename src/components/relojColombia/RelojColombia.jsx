@@ -77,7 +77,7 @@ const RelojColombia = ({
       6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0,
       1, 2, 3, 4, 5,
     ],
-    Mexico: [
+    México: [
       24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
       20, 21, 22, 23,
     ],
@@ -110,6 +110,11 @@ const RelojColombia = ({
         area: "Comercial",
         inicio: "10.00",
         salida: "20.30",
+      },
+      {
+        area: "Comunicacion",
+        inicio: "09.00",
+        salida: "18.00",
       },
     ],
     Chile: [
@@ -153,7 +158,7 @@ const RelojColombia = ({
         salida: "22.00",
       },
     ],
-    Mexico: [
+    México: [
       {
         area: "Marketing",
         inicio: "07.00",

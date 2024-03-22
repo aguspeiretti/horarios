@@ -36,7 +36,7 @@ const Marketing = ({ vpn }) => {
       horaSalida: 20.3,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Marketing",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 8.9,
@@ -73,15 +73,15 @@ const Marketing = ({ vpn }) => {
       nombre: "Chile",
       area: "Marketing",
       zonaHoraria: "Chile/Continental",
-      jornadaLaboral: 15,
+      jornadaLaboral: 11.5,
       horaIngreso: 10,
       horaSalida: 20.3,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Marketing",
       zonaHoraria: "America/Mexico_City",
-      jornadaLaboral: 15,
+      jornadaLaboral: 10,
       horaIngreso: 7,
       horaSalida: 16,
     },
@@ -89,7 +89,7 @@ const Marketing = ({ vpn }) => {
       nombre: "Colombia",
       area: "Marketing",
       zonaHoraria: "America/Bogota",
-      jornadaLaboral: 15,
+      jornadaLaboral: 10,
       horaIngreso: 8,
       horaSalida: 17,
     },
@@ -129,7 +129,7 @@ const Marketing = ({ vpn }) => {
     },
 
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Marketing",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 8.9,
@@ -139,7 +139,7 @@ const Marketing = ({ vpn }) => {
   ];
   const mejico = [
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Marketing",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 9.1,
@@ -214,7 +214,7 @@ const Marketing = ({ vpn }) => {
       horaSalida: 20.3,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Marketing",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 8.9,

@@ -38,7 +38,7 @@ const Gestion = ({ vpn }) => {
       nombre: "Argentina",
       area: "Coordinacion",
       zonaHoraria: "America/Argentina/Buenos_Aires",
-      jornadaLaboral: 8.8,
+      jornadaLaboral: 8.9,
       horaIngreso: 10,
       horaSalida: 20.5,
     },
@@ -72,7 +72,7 @@ const Gestion = ({ vpn }) => {
   ];
   const mejico = [
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Gestion",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 9.1,

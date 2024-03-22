@@ -67,14 +67,14 @@ const Contable = ({ vpn }) => {
       nombre: "Argentina",
       area: "Contable",
       zonaHoraria: "America/Argentina/Buenos_Aires",
-      jornadaLaboral: 10,
+      jornadaLaboral: 9.2,
       horaIngreso: 8,
       horaSalida: 17,
     },
   ];
   const mexico = [
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Contable",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 9,

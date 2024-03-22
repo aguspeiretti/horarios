@@ -94,7 +94,7 @@ const RelojEspaña = ({
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
       21, 22, 23, 24,
     ],
-    Mexico: [
+    México: [
       18, 19, 20, 21, 22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
       14, 15, 16, 17,
     ],
@@ -166,7 +166,7 @@ const RelojEspaña = ({
         salida: "20.45",
       },
     ],
-    Mexico: [
+    México: [
       {
         area: "Marketing",
         inicio: "07.00",
@@ -218,6 +218,11 @@ const RelojEspaña = ({
         inicio: "10.00",
         salida: "20.30",
       },
+      {
+        area: "Comunicacion",
+        inicio: "09.00",
+        salida: "18.00",
+      },
     ],
     Chile: [
       {
@@ -253,7 +258,7 @@ const RelojEspaña = ({
         salida: "21.00",
       },
     ],
-    Mexico: [
+    México: [
       {
         area: "Marketing",
         inicio: "07.00",

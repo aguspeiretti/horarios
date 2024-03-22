@@ -73,13 +73,13 @@ const RelojChile = ({
       4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
       24, 0, 1, 2, 3,
     ],
-    Mexico: [
+    México: [
       22, 23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
       18, 19, 20, 21,
     ],
-   Colombia: [
-      23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-      18, 19, 20, 21, 22,
+    Colombia: [
+      23, 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+      19, 20, 21, 22,
     ],
     //
     // Añade más países y sus respectivos órdenes aquí si es necesario
@@ -111,6 +111,11 @@ const RelojChile = ({
         area: "Comercial",
         inicio: "10.00",
         salida: "20.30",
+      },
+      {
+        area: "Comunicacion",
+        inicio: "09.00",
+        salida: "18.00",
       },
     ],
     Chile: [
@@ -147,7 +152,7 @@ const RelojChile = ({
         salida: "20.45",
       },
     ],
-    Mexico: [
+    México: [
       {
         area: "Marketing",
         inicio: "07.00",
@@ -159,7 +164,7 @@ const RelojChile = ({
         salida: "20.00",
       },
     ],
-    Colombia:[
+    Colombia: [
       {
         area: "Marketing",
         inicio: "08.00",
@@ -170,7 +175,7 @@ const RelojChile = ({
         inicio: "12.00",
         salida: "22.00",
       },
-    ]
+    ],
   };
 
   // Obtener los horarios para el país y área específicos

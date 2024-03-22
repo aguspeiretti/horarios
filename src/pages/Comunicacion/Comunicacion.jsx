@@ -30,7 +30,7 @@ const Comunicacion = ({ vpn }) => {
       nombre: "España",
       area: "Comunicacion",
       zonaHoraria: "Europe/Madrid",
-      jornadaLaboral: 9.8,
+      jornadaLaboral: 9.2,
       horaIngreso: 13,
       horaSalida: 22,
     },
@@ -38,7 +38,7 @@ const Comunicacion = ({ vpn }) => {
       nombre: "Argentina",
       area: "Comunicacion",
       zonaHoraria: "America/Argentina/Buenos_Aires",
-      jornadaLaboral: 9.8,
+      jornadaLaboral: 9.2,
       horaIngreso: 9,
       horaSalida: 18,
     },
@@ -63,7 +63,7 @@ const Comunicacion = ({ vpn }) => {
   ];
   const mexico = [
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comunicacion",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 9.3,

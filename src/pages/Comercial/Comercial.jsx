@@ -35,7 +35,7 @@ const Comercial = ({ vpn }) => {
       horaSalida: 20.5,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comercial",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 10,
@@ -77,7 +77,7 @@ const Comercial = ({ vpn }) => {
       horaSalida: 20.5,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comercial",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 11,
@@ -120,7 +120,7 @@ const Comercial = ({ vpn }) => {
     },
 
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comercial",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 10,
@@ -138,7 +138,7 @@ const Comercial = ({ vpn }) => {
   ];
   const mexico = [
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comercial",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 10.8,
@@ -204,7 +204,7 @@ const Comercial = ({ vpn }) => {
       horaSalida: 21.45,
     },
     {
-      nombre: "Mexico",
+      nombre: "México",
       area: "Comercial",
       zonaHoraria: "America/Mexico_City",
       jornadaLaboral: 10.8,
