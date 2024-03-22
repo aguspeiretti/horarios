@@ -143,9 +143,36 @@
     left:45.83%;
     z-index: 100;
   }
+  .breackm-Argentina-Comunicacion{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:45.83%;
+    z-index: 100;
+  }
   
   /* BARRA DE JORNADA */
-  
+  #contenedor2m-Mexico-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 25%;
+   }
+   #contenedor2m-Argentina-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 25%;
+   }
   
   
   #contenedor2m-Mexico-Marketing{

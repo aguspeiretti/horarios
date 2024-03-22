@@ -4,7 +4,7 @@ import Home from "./home/Home";
 import Loader from "./components/loader/Loader";
 
 const App = () => {
-  const [vpn, setVpn] = useState("");
+  const [vpn, setVpn] = useState("Colombia");
   console.log(vpn);
 
   useEffect(() => {

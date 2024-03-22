@@ -147,7 +147,36 @@
     z-index: 100;
   }
   
+  .breackCo-Argentina-Comunicacion{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:50%;
+    z-index: 100;
+  }
+  
   /* BARRA DE JORNADA */
+  #contenedor2Co-Colombia-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 29.16%;
+   }
+   #contenedor2Co-Argentina-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 29.16%;
+   }
   
   
   

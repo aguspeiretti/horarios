@@ -22,7 +22,10 @@ const Nav = ({ handleMenu }) => {
             <li onClick={handleMenu}>Recursos humanos</li>
           </Link>
           <Link to={"/administracion"}>
-            <li onClick={handleMenu}>Administracion</li>
+            <li onClick={handleMenu}>Administración</li>
+          </Link>
+          <Link to={"/Comunicacion"}>
+            <li onClick={handleMenu}>Comunicación</li>
           </Link>
         </ul>
       </div>

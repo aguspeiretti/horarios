@@ -12,6 +12,7 @@ import Gestion from "../pages/Gestion/Gestion";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import Comunicacion from "../pages/Comunicacion/Comunicacion";
 
 const Home = ({ vpn }) => {
   const [menu, setMenu] = useState(false);
@@ -44,6 +45,7 @@ const Home = ({ vpn }) => {
             <Route path="/ventas" element={<Comercial vpn={vpn} />} />
             <Route path="/gestion" element={<Gestion vpn={vpn} />} />
             <Route path="/coordinacion" element={<Coordinacion vpn={vpn} />} />
+            <Route path="/comunicacion" element={<Comunicacion vpn={vpn} />} />
           </Routes>
         </div>
       </div>

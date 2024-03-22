@@ -143,8 +143,36 @@
     left:79.16%;
     z-index: 100;
   }
+  .breacke-Argentina-Comunicacion{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:74.3%;
+    z-index: 100;
+  }
   
   /* BARRA DE JORNADA */
+  #contenedor2e-España-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 54.16%;
+   }
+   #contenedor2e-Argentina-Comunicacion{
+    width: 37.5%;
+     height: 10px;
+     background-color: rgba(169, 130, 196, 0.507);
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     overflow: hidden;
+     position: absolute;
+     left: 54.16%;
+   }
   
   
   
