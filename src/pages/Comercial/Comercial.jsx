@@ -184,7 +184,7 @@ const Comercial = ({ vpn }) => {
       area: "Comercial",
       zonaHoraria: "America/Bogota",
       jornadaLaboral: 10.6,
-      horaIngreso: 12,
+      horaIngreso: 10,
       horaSalida: 22,
     },
     {

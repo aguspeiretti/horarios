@@ -154,7 +154,7 @@ const RelojColombia = ({
     Colombia: [
       {
         area: "Comercial",
-        inicio: "12.00",
+        inicio: "10.00",
         salida: "22.00",
       },
     ],
