@@ -51,7 +51,7 @@
     z-index: 100;
   }
   
-  .breackm-Mexico-Marketing{
+  .breackm-México-Marketing{
     width: 4.16%;
     height: 10px;
     background-color: #3be780;;
@@ -119,7 +119,7 @@
     z-index: 100;
   }
   
-  .breackm-Mexico-Comercial{
+  .breackm-México-Comercial{
     width: 7.2%;
     height: 10px;
     background-color: #3be780;;
@@ -151,9 +151,17 @@
     left:45.83%;
     z-index: 100;
   }
+  .breackm-México-Gestion{
+    width: 4.16%;
+    height: 10px;
+    background-color: #3be780;;
+    position: absolute;
+    left:45.83%;
+    z-index: 100;
+  }
   
   /* BARRA DE JORNADA */
-  #contenedor2m-Mexico-Comunicacion{
+  #contenedor2m-México-Comunicacion{
     width: 37.5%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -175,7 +183,7 @@
    }
   
   
-  #contenedor2m-Mexico-Marketing{
+  #contenedor2m-México-Marketing{
    width: 37.5%;
     height: 10px;
     background-color: rgba(169, 130, 196, 0.507);
@@ -247,7 +255,7 @@
      position: absolute;
      left: 12.5%
    }
-   #contenedor2m-Mexico-Contable{
+   #contenedor2m-México-Contable{
     width: 37.5%;
     height: 10px;
     background-color: rgba(169, 130, 196, 0.507);
@@ -268,7 +276,7 @@
      position: absolute;
      left: 20.83%;
    }
-   #contenedor2m-Mexico-Rrhh{
+   #contenedor2m-México-Rrhh{
     width: 37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -288,7 +296,7 @@
    position: absolute;
    left: 50%;
  }
-   #contenedor2m-Mexico-Comercial{
+   #contenedor2m-México-Comercial{
     width: 43.75%;
      height: 10px;
      background-color: rgba(169, 130, 196, 0.507);
@@ -348,7 +356,7 @@
    position: absolute;
    left: 29.16%;
   }
-  #contenedor2m-Mexico-Coordinacion{
+  #contenedor2m-México-Coordinacion{
     width:37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -358,7 +366,7 @@
    position: absolute;
    left: 29.16%;
   }
-  #contenedor2m-Mexico-Gestion{
+  #contenedor2m-México-Gestion{
     width:37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
@@ -368,7 +376,7 @@
    position: absolute;
    left: 29.16%;
   }
-  #contenedor2m-Mexico-Coordinacion{
+  #contenedor2m-México-Coordinacion{
     width:37.5%;
    height: 10px;
    background-color: rgba(169, 130, 196, 0.507);
